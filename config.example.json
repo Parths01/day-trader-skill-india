@@ -1,0 +1,47 @@
+{
+  "capital": 100000,
+  "max_loss_per_trade": 1000,
+  "daily_loss_limit": 2500,
+  "flat_by": "15:15",
+  "entry_window": ["09:15", "15:00"],
+  "paper": true,
+  "tick_sizes": {
+    "RELIANCE": 0.05
+  },
+  "special_sessions": {},
+  "max_position_pct": 0.25,
+  "max_order_value": 25000,
+  "cash_buffer_pct": 0.10,
+  "allow_margin": false,
+  "intraday_margin_multiplier": 1.0,
+  "max_trades_per_day": 3,
+  "require_stop": true,
+  "min_reward_risk": 1.0,
+  "blocked": [],
+  "circuit_limit_stocks": [],
+  "asm_gsm_stocks": [],
+  "allow_short": false,
+  "allow_fno": false,
+  "allow_options": false,
+  "trading_costs": {
+    "brokerage": {
+      "percent": 0.0,
+      "max_per_order": 0.0
+    },
+    "stt": {
+      "sell_percent": 0.0
+    },
+    "exchange_charges": {
+      "percent": 0.0
+    },
+    "sebi_fees": {
+      "per_crore": 0.0
+    },
+    "stamp_duty": {
+      "buy_percent": 0.0
+    },
+    "gst": {
+      "percent": 0.0
+    }
+  }
+}

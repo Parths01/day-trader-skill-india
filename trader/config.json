@@ -1,0 +1,18 @@
+{
+  "capital": 0,
+  "max_loss_per_trade": 0,
+  "daily_loss_limit": 0,
+  "flat_by": "15:15",
+  "entry_window": ["09:15", "15:00"],
+  "paper": true,
+  "tick_sizes": {},
+  "special_sessions": {},
+  "trading_costs": {
+    "brokerage": {"percent": 0, "max_per_order": 0},
+    "stt": {"sell_percent": 0},
+    "exchange_charges": {"percent": 0},
+    "sebi_fees": {"per_crore": 0},
+    "stamp_duty": {"buy_percent": 0},
+    "gst": {"percent": 0}
+  }
+}
