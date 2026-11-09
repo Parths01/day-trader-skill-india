@@ -50,6 +50,9 @@ complete prior session and reports its triggered trades separately. Fewer than
 bars, halts, gaps, corporate actions, news, slippage, and future regime changes
 can invalidate the simulation. Review the warnings and current NSE data before
 making any decision. This is not financial advice.
+Simulation output is not an order; continue through sizing and risk checks,
+then require the broker's exact lowercase `yes` response and separate Claude
+Allow/Deny approval before any ticket.
 
 ## Operating assumptions
 

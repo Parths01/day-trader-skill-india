@@ -58,5 +58,7 @@ A listed surveillance status is treated conservatively as a block.
 The default policy is long-only cash equity intraday trading.
 F&O and options require an explicit policy change and separate validation.
 A PASS is a gate for paper workflow, not a broker execution instruction.
+The broker still requires the exact lowercase `yes` response and a separate
+Claude Allow/Deny approval before showing or submitting a ticket.
 Keep the generated risk state file private to the local trading workspace.
 Review every BLOCK reason before changing policy or surveillance data.

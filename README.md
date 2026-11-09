@@ -28,12 +28,6 @@ Or install the plugin in Claude Code:
 
 The package requires Python 3.8 or newer and has no third-party dependencies.
 
-The original US modules remain in this repository for compatibility:
-`/trader-scanner`, `/trader-news`, `/trader-entry`, `/trader-exit`,
-`/trader-timemachine`, `/trader-risk`, `/trader-budget`, `/trader-broker`,
-`/trader-alerts`, `/trader-analyst`, and `/trader-pelosi`. The Indian commands
-below use IST, NSE sessions, rupee risk, and Indian data conventions.
-
 ## The Indian skills
 
 | command | job | what it does |

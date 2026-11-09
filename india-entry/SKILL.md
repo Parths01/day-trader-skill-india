@@ -41,6 +41,10 @@ errors are reported clearly and never converted into a successful trigger.
 Recheck the live NSE quote, spread, volume, and current session status before
 acting. This is not financial advice.
 
+An entry signal is not an order. Continue through exit planning, sizing, risk,
+and the broker's exact yes plus Allow/Deny approval before any paper or live
+ticket.
+
 The output includes the symbol, date, opening-range high and low, trigger
 close, trigger bar time, and optional volume multiple. All times are IST.
 Only completed five-minute bars on the expected grid are considered.

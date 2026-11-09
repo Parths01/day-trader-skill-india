@@ -56,6 +56,8 @@ The `bound_by` field is suitable for explaining why quantity was capped.
 The `limits` array preserves each limit for audit and review.
 The generated bracket includes the plan values for the risk checker.
 A proposed order is not an approval and is not an execution.
+Continue through risk and broker review; the broker requires exact lowercase
+`yes` plus a separate Claude Allow/Deny approval before any ticket.
 Use a current cash figure when the account has other open positions.
 Do not enable margin based only on a generic broker marketing number.
 Update configuration when the broker changes product-specific leverage.

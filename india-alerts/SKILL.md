@@ -51,7 +51,9 @@ when at least one alert rang.
 Yahoo quotes are free, delayed, unofficial data. They are appropriate for
 notifications, not for order timing, stop execution, or determining whether a
 market has filled. Confirm the price, spread, liquidity, and order status with
-your broker. This is not financial advice.
+your broker. This is not financial advice. Alerts never replace risk checks;
+any resulting ticket still requires exact lowercase `yes` and Claude
+Allow/Deny approval.
 
 ## Offline fixtures
 

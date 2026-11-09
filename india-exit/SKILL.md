@@ -45,6 +45,8 @@ The plan reads only `entry.json`, writes `trader/plan.json` with `--write`, and
 does not silently invent an entry when the entry status is not triggered.
 Missing or malformed files are errors. Verify charges, liquidity, slippage,
 and broker square-off rules independently. This is not financial advice.
+Continue through sizing and risk checks; the broker requires the exact lowercase
+`yes` response for that one order plus a separate Claude Allow/Deny approval.
 
 ## Operating assumptions
 

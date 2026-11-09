@@ -5,22 +5,15 @@ import unittest
 
 from _load import ROOT
 
-# v2, the day-trading pack: the eleven folders the reel's repo card shows
-SKILLS = ["trader-scanner", "trader-news", "trader-entry", "trader-exit", "trader-timemachine",
-          "trader-risk", "trader-budget", "trader-broker", "trader-alerts", "trader-analyst",
-          "trader-pelosi", "india-scanner"]
-SKILLS += ["india-entry", "india-exit"]
-SKILLS += ["india-timemachine"]
-SKILLS += ["india-budget", "india-risk"]
-SKILLS += ["india-alerts"]
-SKILLS += ["india-news", "india-analyst"]
-SKILLS += ["india-disclosures"]
-SKILLS += ["india-broker"]
+# Indian NSE skill folders shipped by this plugin.
+SKILLS = ["india-scanner", "india-entry", "india-exit", "india-timemachine",
+          "india-budget", "india-risk", "india-alerts", "india-news",
+          "india-analyst", "india-disclosures", "india-broker"]
 ABOUT = ("Indian NSE day-trading skills for scanning, planning, simulating, sizing, risk-checking, "
          "alerting, researching, and paper-ticketing trades.")
 # skills on the way to an order carry the safety block
-ORDER_PATH = ["trader-scanner", "trader-entry", "trader-exit", "trader-timemachine", "trader-budget",
-              "trader-pelosi", "trader-risk", "trader-broker", "trader-alerts"]
+ORDER_PATH = ["india-entry", "india-exit", "india-timemachine", "india-budget",
+              "india-risk", "india-broker", "india-alerts"]
 V1_ONLY = ["trader-copycat", "trader-screener", "trader-tax", "trader-rebalance"]
 
 
@@ -129,17 +122,17 @@ class Repo(unittest.TestCase):
                         self.assertNotIn(bad, src, "%s/%s" % (s, f))
 
     def test_day_trading_limits_ship_in_the_example_config(self):
-        with open(os.path.join(ROOT, "trader-budget", "config.example.json")) as fh:
+        with open(os.path.join(ROOT, "config.example.json")) as fh:
             cfg = json.load(fh)
-        for k in ("max_loss_per_trade_usd", "max_daily_loss_usd", "max_trades_per_day",
-                  "min_reward_risk", "require_stop", "no_entries_after", "flat_by"):
+        for k in ("max_loss_per_trade", "daily_loss_limit", "max_trades_per_day",
+                  "min_reward_risk", "require_stop", "entry_window", "flat_by"):
             self.assertIn(k, cfg, k)
         self.assertIs(cfg["require_stop"], True)
         self.assertIs(cfg.get("allow_short", False), False)
         self.assertIs(cfg.get("allow_margin", False), False)
 
     def test_paper_trading_is_the_default(self):
-        with open(os.path.join(ROOT, "trader-budget", "config.example.json")) as fh:
+        with open(os.path.join(ROOT, "config.example.json")) as fh:
             cfg = json.load(fh)
         self.assertIs(cfg["paper"], True)
         self.assertIs(cfg.get("allow_options", False), False)
