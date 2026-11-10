@@ -64,7 +64,10 @@ class Repo(unittest.TestCase):
         with open(os.path.join(ROOT, ".claude-plugin", "plugin.json")) as fh:
             plugin = json.load(fh)
         self.assertEqual(plugin["name"], "india-day-trader-skill")
-        self.assertEqual(plugin["skills"], "./")
+        self.assertEqual(
+            plugin["skills"],
+            ["./%s/" % skill for skill in sorted(SKILLS)],
+        )
         self.assertEqual(plugin["description"], ABOUT)
         with open(os.path.join(ROOT, ".claude-plugin", "marketplace.json")) as fh:
             market = json.load(fh)

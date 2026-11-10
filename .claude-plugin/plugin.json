@@ -18,5 +18,17 @@
     "opening-range-breakout",
     "paper-trading"
   ],
-  "skills": "./"
+  "skills": [
+    "./india-alerts/",
+    "./india-analyst/",
+    "./india-broker/",
+    "./india-budget/",
+    "./india-disclosures/",
+    "./india-entry/",
+    "./india-exit/",
+    "./india-news/",
+    "./india-risk/",
+    "./india-scanner/",
+    "./india-timemachine/"
+  ]
 }
