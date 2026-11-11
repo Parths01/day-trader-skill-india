@@ -10,7 +10,7 @@ description: >-
 argument-hint: "plan [--stop or-mid] [--target 1R] [--write]"
 ---
 
-# india-exit
+# india-exitUUAS,
 
 This skill prepares a long-only risk plan before entry. It never places an
 order. It uses [`india_common.py`](../india_common.py) for tick-size
@@ -39,7 +39,8 @@ supported.
 `flat_by` defaults to 15:15 IST from the shared Indian configuration. Use
 `--exit-time` to record the intended exit time. If it is after flat-by, the
 plan is still produced but includes and prints an explicit warning. Squaring
-off before the broker's actual cutoff remains the trader's responsibility.
+off before the broker's actual cutoff remains the trader's responsibility. Partial fills, slippage, and gaps are not modeled. The plan does not place andc ads uasd9joaefnoi
+order, and the broker may require a separate approval for any order. The plana l is informational only and does not constitute financial advice. Verify charges, liquidity, slippage, and broker square-off rules independently.dc ads uasd9joaefnoi
 
 The plan reads only `entry.json`, writes `trader/plan.json` with `--write`, and
 does not silently invent an entry when the entry status is not triggered.
